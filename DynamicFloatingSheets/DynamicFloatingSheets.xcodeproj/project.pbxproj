@@ -12,6 +12,7 @@
 		F9A573732D998CB600ACC120 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A5736B2D998CB600ACC120 /* Preview Assets.xcassets */; };
 		F9A573742D998CB600ACC120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A5736D2D998CB600ACC120 /* Assets.xcassets */; };
 		F9F97B452D9A8AFB000BB2DA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97B442D9A8AFB000BB2DA /* Data.swift */; };
+		F9F97B482D9A8D34000BB2DA /* TrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97B472D9A8D34000BB2DA /* TrayHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F9A5736E2D998CB600ACC120 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9A5736F2D998CB600ACC120 /* DynamicFloatingSheetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFloatingSheetsApp.swift; sourceTree = "<group>"; };
 		F9F97B442D9A8AFB000BB2DA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F9F97B472D9A8D34000BB2DA /* TrayHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		F9A573702D998CB600ACC120 /* DynamicFloatingSheets */ = {
 			isa = PBXGroup;
 			children = (
+				F9F97B462D9A8D17000BB2DA /* Helpers */,
 				F9F97B432D9A8AE4000BB2DA /* Mock Data */,
 				F9A5736C2D998CB600ACC120 /* Preview Content */,
 				F9A5736D2D998CB600ACC120 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				F9F97B442D9A8AFB000BB2DA /* Data.swift */,
 			);
 			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		F9F97B462D9A8D17000BB2DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F9F97B472D9A8D34000BB2DA /* TrayHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				F9A573712D998CB600ACC120 /* ContentView.swift in Sources */,
 				F9F97B452D9A8AFB000BB2DA /* Data.swift in Sources */,
 				F9A573722D998CB600ACC120 /* DynamicFloatingSheetsApp.swift in Sources */,
+				F9F97B482D9A8D34000BB2DA /* TrayHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
