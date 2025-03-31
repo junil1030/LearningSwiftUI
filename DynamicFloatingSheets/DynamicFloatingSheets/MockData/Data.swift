@@ -14,7 +14,7 @@ struct Action: Identifiable, Hashable {
     var title: String
 }
 
-let action: [Action] = [
+let actions: [Action] = [
     .init(image: "xbox.logo", title: "Game PAss"),
     .init(image: "playstation.logo", title: "PS Plus"),
     .init(image: "apple.logo", title: "iCloud+"),
