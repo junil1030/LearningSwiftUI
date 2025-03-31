@@ -1,0 +1,39 @@
+//
+//  TrayHelper.swift
+//  DynamicFloatingSheets
+//
+//  Created by 서준일 on 3/31/25.
+//
+
+import SwiftUI
+
+struct TrayConfig {
+    var maxDetent: PresentationDetent
+    var cornerRadius: CGFloat = 30
+    var isInteractiveDismissDisabled: Bool = false
+    //  필요한 속성 추가
+}
+
+extension View {
+    @ViewBuilder
+    func systemTrayView<Content: View>(
+        _ show: Binding<Bool>,
+        config: TrayConfig = .init(maxDetent: .fraction(0.99)),
+        @ViewBuilder content: @escaping () -> Content
+    ) -> some View {
+        self
+            .sheet(isPresented: show) {
+                content()
+                    .background(.background)
+                    .clipShape(.rect(cornerRadius: config.cornerRadius))
+                    .padding([.horizontal, .bottom], 15)
+                    .frame(maxHeight: .infinity, alignment: .bottom)
+                    // Presentation Configurations
+                    .presentationDetents([config.maxDetent])
+                    .presentationCornerRadius(0)
+                    .presentationBackground(.clear)
+                    .presentationDragIndicator(.hidden)
+                    .interactiveDismissDisabled(config.isInteractiveDismissDisabled)
+            }
+    }
+}
