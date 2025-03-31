@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				F9F97B462D9A8D17000BB2DA /* Helpers */,
-				F9F97B432D9A8AE4000BB2DA /* Mock Data */,
+				F9F97B432D9A8AE4000BB2DA /* MockData */,
 				F9A5736C2D998CB600ACC120 /* Preview Content */,
 				F9A5736D2D998CB600ACC120 /* Assets.xcassets */,
 				F9A5736E2D998CB600ACC120 /* ContentView.swift */,
@@ -73,12 +73,12 @@
 			path = DynamicFloatingSheets;
 			sourceTree = "<group>";
 		};
-		F9F97B432D9A8AE4000BB2DA /* Mock Data */ = {
+		F9F97B432D9A8AE4000BB2DA /* MockData */ = {
 			isa = PBXGroup;
 			children = (
 				F9F97B442D9A8AFB000BB2DA /* Data.swift */,
 			);
-			path = "Mock Data";
+			path = MockData;
 			sourceTree = "<group>";
 		};
 		F9F97B462D9A8D17000BB2DA /* Helpers */ = {
