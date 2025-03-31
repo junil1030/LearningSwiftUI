@@ -37,7 +37,7 @@ extension View {
                     .presentationBackground(.clear)
                     .presentationDragIndicator(.hidden)
                     .interactiveDismissDisabled(config.isInteractiveDismissDisabled)
-                    .background()
+                    .background(RemoveSheetShadow())
             }
     }
 }
@@ -57,7 +57,7 @@ fileprivate struct RemoveSheetShadow: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        <#code#>
+        
     }
 }
 
