@@ -12,6 +12,8 @@ struct TrayConfig {
     var cornerRadius: CGFloat = 30
     var isInteractiveDismissDisabled: Bool = false
     //  필요한 속성 추가
+    var horizontalPadding: CGFloat = 15
+    var bottomPadding: CGFloat = 15
 }
 
 extension View {
@@ -26,7 +28,8 @@ extension View {
                 content()
                     .background(.background)
                     .clipShape(.rect(cornerRadius: config.cornerRadius))
-                    .padding([.horizontal, .bottom], 15)
+                    .padding(.horizontal, config.horizontalPadding)
+                    .padding(.bottom, config.bottomPadding)
                     .frame(maxHeight: .infinity, alignment: .bottom)
                     // Presentation Configurations
                     .presentationDetents([config.maxDetent])
@@ -34,6 +37,7 @@ extension View {
                     .presentationBackground(.clear)
                     .presentationDragIndicator(.hidden)
                     .interactiveDismissDisabled(config.isInteractiveDismissDisabled)
+                    .background()
             }
     }
 }
