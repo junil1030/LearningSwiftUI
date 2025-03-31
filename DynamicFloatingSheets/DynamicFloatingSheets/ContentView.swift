@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    //MARK: - 뷰 속성
+    @State private var show: Bool = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button("Show Tray View") {
+            show.toggle()
         }
-        .padding()
+        .systemTrayView($show) {
+            Text("Hello Form Tray")
+                .frame(maxWidth: .infinity)
+                .frame(height: 300)
+        }
     }
 }
 
