@@ -41,3 +41,32 @@ extension View {
             }
     }
 }
+
+fileprivate struct RemoveSheetShadow: UIViewRepresentable {
+    func makeUIView(context: Context) -> some UIView {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .clear
+        
+        DispatchQueue.main.async {
+            if let shadowView = view.dropShadowView {
+                shadowView.layer.shadowColor = UIColor.clear.cgColor
+            }
+        }
+        
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        <#code#>
+    }
+}
+
+extension UIView {
+    var dropShadowView: UIView? {
+        if let superview, String(describing: type(of: superview)) == "UIDropShadowView" {
+            return superview
+        }
+        
+        return superview?.dropShadowView
+    }
+}
