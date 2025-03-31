@@ -11,6 +11,7 @@
 		F9A573722D998CB600ACC120 /* DynamicFloatingSheetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5736F2D998CB600ACC120 /* DynamicFloatingSheetsApp.swift */; };
 		F9A573732D998CB600ACC120 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A5736B2D998CB600ACC120 /* Preview Assets.xcassets */; };
 		F9A573742D998CB600ACC120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A5736D2D998CB600ACC120 /* Assets.xcassets */; };
+		F9F97B452D9A8AFB000BB2DA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F97B442D9A8AFB000BB2DA /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F9A5736D2D998CB600ACC120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9A5736E2D998CB600ACC120 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9A5736F2D998CB600ACC120 /* DynamicFloatingSheetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFloatingSheetsApp.swift; sourceTree = "<group>"; };
+		F9F97B442D9A8AFB000BB2DA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,21 @@
 		F9A573702D998CB600ACC120 /* DynamicFloatingSheets */ = {
 			isa = PBXGroup;
 			children = (
+				F9F97B432D9A8AE4000BB2DA /* Mock Data */,
 				F9A5736C2D998CB600ACC120 /* Preview Content */,
 				F9A5736D2D998CB600ACC120 /* Assets.xcassets */,
 				F9A5736E2D998CB600ACC120 /* ContentView.swift */,
 				F9A5736F2D998CB600ACC120 /* DynamicFloatingSheetsApp.swift */,
 			);
 			path = DynamicFloatingSheets;
+			sourceTree = "<group>";
+		};
+		F9F97B432D9A8AE4000BB2DA /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				F9F97B442D9A8AFB000BB2DA /* Data.swift */,
+			);
+			path = "Mock Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9A573712D998CB600ACC120 /* ContentView.swift in Sources */,
+				F9F97B452D9A8AFB000BB2DA /* Data.swift in Sources */,
 				F9A573722D998CB600ACC120 /* DynamicFloatingSheetsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
