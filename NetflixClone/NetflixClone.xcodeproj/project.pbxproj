@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F980AAC52D9B806A00E91E97 /* PreviewContent */ = {
+		F980AAC52D9B806A00E91E97 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
 				F980AAC42D9B806A00E91E97 /* Preview Assets.xcassets */,
 			);
-			path = PreviewContent;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F980AAC92D9B806A00E91E97 /* NetflixClone */ = {
@@ -67,7 +67,7 @@
 			children = (
 				F980AACF2D9B807600E91E97 /* Components */,
 				F980AACE2D9B807200E91E97 /* Core */,
-				F980AAC52D9B806A00E91E97 /* PreviewContent */,
+				F980AAC52D9B806A00E91E97 /* Preview Content */,
 				F980AAC62D9B806A00E91E97 /* Assets.xcassets */,
 				F980AAC72D9B806A00E91E97 /* ContentView.swift */,
 				F980AAC82D9B806A00E91E97 /* NetflixCloneApp.swift */,
