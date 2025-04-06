@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NetflixHeroCell: View {
     
-    var imageName: String = "RandomImage"
+    var imageName: String = Constants.randomImage
     var isNetflixFlim: Bool = true
     var title: String = "players"
     var categories: [String] = ["Raunchy", "Romantic", "Comedy"]
@@ -19,9 +19,14 @@ struct NetflixHeroCell: View {
     
     var body: some View {
         ZStack {
-            //ImageLoader
+            ImageLoaderView(urlString: imageName)
+            
+            VStack(spacing: 16) {
+                Text("hi")
+            }
+            .background(Color.red)
         }
-            .aspectRatio(0.8, contentMode: .fit)
+        .aspectRatio(0.8, contentMode: .fit)
     }
 }
 
