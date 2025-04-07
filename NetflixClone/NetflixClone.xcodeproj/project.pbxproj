@@ -18,6 +18,11 @@
 		F980AAD12D9B809B00E91E97 /* NetflixHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F980AAD02D9B809B00E91E97 /* NetflixHomeView.swift */; };
 		F980AAD32D9B820200E91E97 /* NetflixFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F980AAD22D9B820200E91E97 /* NetflixFilterCell.swift */; };
 		F980AAD52D9B835000E91E97 /* NetflixFilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F980AAD42D9B835000E91E97 /* NetflixFilterBarView.swift */; };
+		F9DD5B182DA36A31004EA545 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = F9DD5B172DA36A31004EA545 /* SwiftfulUI */; };
+		F9DD5B1B2DA36BA5004EA545 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = F9DD5B1A2DA36BA5004EA545 /* SwiftfulRouting */; };
+		F9DD5B1D2DA37102004EA545 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD5B1C2DA37100004EA545 /* Product.swift */; };
+		F9DD5B1F2DA37134004EA545 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD5B1E2DA37130004EA545 /* DatabaseHelper.swift */; };
+		F9DD5B212DA37332004EA545 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD5B202DA37331004EA545 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,9 @@
 		F980AAD02D9B809B00E91E97 /* NetflixHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixHomeView.swift; sourceTree = "<group>"; };
 		F980AAD22D9B820200E91E97 /* NetflixFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterCell.swift; sourceTree = "<group>"; };
 		F980AAD42D9B835000E91E97 /* NetflixFilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterBarView.swift; sourceTree = "<group>"; };
+		F9DD5B1C2DA37100004EA545 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F9DD5B1E2DA37130004EA545 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		F9DD5B202DA37331004EA545 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DD5B182DA36A31004EA545 /* SwiftfulUI in Frameworks */,
+				F9DD5B1B2DA36BA5004EA545 /* SwiftfulRouting in Frameworks */,
 				5896AD70E9D3BEEBE103D389 /* Pods_NetflixClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,8 +79,11 @@
 		F94F46702DA137C000E8C90C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F9DD5B1E2DA37130004EA545 /* DatabaseHelper.swift */,
 				F94F46732DA1381E00E8C90C /* ImageLoaderView.swift */,
 				F94F46712DA137C900E8C90C /* Constants.swift */,
+				F9DD5B1C2DA37100004EA545 /* Product.swift */,
+				F9DD5B202DA37331004EA545 /* User.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -179,6 +192,10 @@
 			);
 			mainGroup = F980AAAA2D9B7F4600E91E97;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F9DD5B162DA36A31004EA545 /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				F9DD5B192DA36BA5004EA545 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F980AAB42D9B7F4600E91E97 /* Products */;
 			projectDirPath = "";
@@ -250,12 +267,15 @@
 			files = (
 				F980AAD52D9B835000E91E97 /* NetflixFilterBarView.swift in Sources */,
 				F980AACA2D9B806A00E91E97 /* ContentView.swift in Sources */,
+				F9DD5B1D2DA37102004EA545 /* Product.swift in Sources */,
 				F94F466F2DA1364F00E8C90C /* NetflixHeroCell.swift in Sources */,
 				F980AACB2D9B806A00E91E97 /* NetflixCloneApp.swift in Sources */,
 				F94F46722DA137CC00E8C90C /* Constants.swift in Sources */,
+				F9DD5B1F2DA37134004EA545 /* DatabaseHelper.swift in Sources */,
 				F94F46742DA1381E00E8C90C /* ImageLoaderView.swift in Sources */,
 				F980AAD32D9B820200E91E97 /* NetflixFilterCell.swift in Sources */,
 				F980AAD12D9B809B00E91E97 /* NetflixHomeView.swift in Sources */,
+				F9DD5B212DA37332004EA545 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +491,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9DD5B162DA36A31004EA545 /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		F9DD5B192DA36BA5004EA545 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9DD5B172DA36A31004EA545 /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9DD5B162DA36A31004EA545 /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+		F9DD5B1A2DA36BA5004EA545 /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9DD5B192DA36BA5004EA545 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F980AAAB2D9B7F4600E91E97 /* Project object */;
 }
